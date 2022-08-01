@@ -1,0 +1,140 @@
+.error-wrapper {
+  max-width: 560px;
+  background-color: white;
+  padding: 1em 2em;
+  border-radius: 15px;
+  box-shadow: #85a77d 2px 2px 4px;
+}
+.error-wrapper p {
+  color: grey;
+}
+.error-wrapper span {
+  color: black;
+  text-decoration: underline;
+  font-size: 1.1em;
+}
+
+.minesweeper-wrapper {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: #85a77d 2px 2px 4px;
+  padding: 1em;
+}
+.minesweeper-wrapper #minesweeper {
+  display: grid;
+  grid-gap: 1px;
+}
+.minesweeper-wrapper #minesweeper > div {
+  width: 25px;
+  height: 25px;
+  cursor: default;
+  text-align: center;
+}
+.minesweeper-wrapper #minesweeper > div {
+  background-color: #e7dada;
+  transform: scale(1);
+  transition: 0.1s all;
+  transition-property: background-color, transform;
+}
+.minesweeper-wrapper #minesweeper > div:hover {
+  background-color: #d3bbbb;
+  transform: scale(1.1);
+}
+.minesweeper-wrapper #minesweeper .fog {
+  cursor: pointer;
+  background-color: #f3f3f3;
+  transform: scale(1);
+  transition: 0.1s all;
+  transition-property: background-color, transform;
+}
+.minesweeper-wrapper #minesweeper .fog:hover {
+  background-color: #dadada;
+  transform: scale(1.1);
+}
+.minesweeper-wrapper #minesweeper .flag {
+  background-color: #187718;
+  transform: scale(1);
+  transition: 0.1s all;
+  transition-property: background-color, transform;
+}
+.minesweeper-wrapper #minesweeper .flag:hover {
+  background-color: #0f4d0f;
+  transform: scale(1.1);
+}
+.minesweeper-wrapper #minesweeper .bomb {
+  background-color: #af1010;
+  transform: scale(1);
+  transition: 0.1s all;
+  transition-property: background-color, transform;
+}
+.minesweeper-wrapper #minesweeper .bomb:hover {
+  background-color: #800c0c;
+  transform: scale(1.1);
+}
+
+.info-buttons {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.info-buttons > * + * {
+  margin-top: 0.5em;
+}
+
+.info-buttons > button, #start-game-form button {
+  font-size: 1.25em;
+  border: none;
+  padding: 0.5em 1em;
+  border-radius: 15px 0px 15px 0px;
+  background-color: #90ff90;
+  transition: 0.2s all;
+  transition-property: background-color, color;
+}
+.info-buttons > button:hover, #start-game-form button:hover {
+  background-color: #318d31;
+  color: white;
+}
+
+#status {
+  text-align: center;
+  padding-top: 0.5em;
+}
+
+#start-game-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#start-game-form > * + * {
+  margin-top: 0.75em;
+}
+#start-game-form button {
+  font-size: 1em;
+}
+#start-game-form input {
+  padding: 0.5em 1em;
+  font-size: 1.25em;
+  width: 100px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.main-wrapper {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background: url("/assets/cool-background.png") no-repeat center fixed;
+  background-size: cover;
+}
+
+/*# sourceMappingURL=styles.css.map */
