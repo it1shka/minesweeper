@@ -1,0 +1,20 @@
+@use 'error';
+@use 'minesweeper';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.main-wrapper {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background: url('/assets/cool-background.png') no-repeat center fixed;
+  background-size: cover;
+}

@@ -1,0 +1,17 @@
+.error-wrapper {
+  max-width: 560px;
+  background-color: white;
+  padding: 1em 2em;
+  border-radius: 15px;
+  box-shadow: #85a77d 2px 2px 4px;
+
+  p {
+    color: grey;
+  }
+
+  span {
+    color: black;
+    text-decoration: underline;
+    font-size: 1.1em;
+  }
+}

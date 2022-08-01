@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/assets/styles.css" rel="stylesheet">
+  <title>Minesweeper</title>
+</head>
+<body>
+  <script defer src="/assets/index.js" type="module"></script>
+
+  <div style="display: none;" id="play-window" class="main-wrapper">
+    <div class="minesweeper-wrapper">
+      <div id="minesweeper"></div>
+      <h1 id="status"></h1>
+    </div>
+
+    <div class="info-buttons">
+      <button id="check-win">
+        Check win!
+      </button>
+      <button id="restart">
+        Restart
+      </button>
+    </div>
+  </div>
+
+  <div id="start-window" class="main-wrapper">
+    <div class="minesweeper-wrapper">
+      <form id="start-game-form">
+        <h2>Start minesweeper game: </h2>
+        <input required type="number"
+          value="10"
+          min="5"
+          max="30"
+          step="1"
+          placeholder="Size: " 
+        >
+        <button>Go!</button>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>
